@@ -13,24 +13,31 @@
       <?php print $menu_utility ?>
     </div>
     <div id="header-inner" class="clearfix center-on-page">
-      <div class = 'title'>
-        <?php if ($logo) {print $header_logo;} ?>
-        <?php if ($site_name) : ?>
-          <div class = 'site-name'><?php print l($site_name, $front_page) ?></div>
-        <?php endif; ?>
-
-        <?php if ($site_slogan = variable_get('site_slogan')) : ?>
-          <div class = 'site-slogan'><?php print $site_slogan; ?></div>
-        <?php endif; ?>
-      </div>
+      
+      <div id="header-top-content" class="clearfix">
+				<div class = 'title'>
+					<?php if ($logo) {print $header_logo;} ?>
+					<?php if ($site_name) : ?>
+						<div class = 'site-name'><?php print l($site_name, $front_page) ?></div>
+					<?php endif; ?>
+	
+					<?php if ($site_slogan = variable_get('site_slogan')) : ?>
+						<div class = 'site-slogan'><?php print $site_slogan; ?></div>
+					<?php endif; ?>
+				</div>
+      </div><!--/header top content--> 
+      
+      <div id="header-bottom-content" class="clearfix">
         
-      <div id="header-right-content" class="clearfix">
         <div id="header-search" class="clearfix">
           <?php print render($page['header']); ?>
         </div><!--/header search-->
         
-               
-      </div><!--/header right content-->
+        <div id="header-subscribe">
+					<?php print drupal_render($subscribe_form)  ?>
+				</div>
+              
+      </div><!--/header bottom content-->
 
     </div><!--/#header-inner-->
   </div> <!-- /.section, /#header -->

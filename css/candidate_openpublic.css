@@ -1,6 +1,6 @@
 /* @override 
-	http://almaikels-com:8888/profiles/openpublic/themes/openpublic_theme/css/openpublic_theme.css?lqyvkl
-	http://almaikels-com:8888/profiles/openpublic/themes/openpublic_theme/css/openpublic_theme.css?lqz8k0
+	http://almaikels-com:8888/sites/all/themes/opcandidate/css/candidate_openpublic.css?lqz8k0
+	http://almaikels-com:8888/sites/all/themes/opcandidate/css/candidate_openpublic.css?lr0ei0
 */
 
 @charset "UTF-8";
@@ -28,7 +28,7 @@ a:hover, a:active {
 #page-wrapper {
   min-height: 800px;
   margin: 0 auto;
-  background: url(../img/bg-page-splash.jpg) no-repeat center top;
+  background: none no-repeat center top;
 }
 
 
@@ -144,48 +144,45 @@ body.page-cutup-home #main {
 
 #header .title{
 	float: left;
-    width:840px;
-    height:135px;
-    background: url(../img/bg-header-glow.png) no-repeat;
+    width: 100%;
+    height:230px;
+    background: url(../img/bg-header-glow.png) no-repeat 76px 0;
 }
 #header .logo{
 	float: left;
 	padding: 8px 2px 0 10px;
 }
 #header .logo img{
-	height: 250px;
 	position: absolute;
 	z-index: 500;
 	top: 40px;
 }
 
 #header .site-name {
-   font-size: 4.6em;
-   overflow: hidden;
+   font-size: 4.2em;
    letter-spacing: -0.04em;
-  font-family: Palatino, "Times New Roman", serif;
-	margin-left: 400px;
+   font-family: Palatino, "Times New Roman", serif;
+   margin-left: 400px;
+   white-space: normal;
+   text-align: left;
 }
 
 #header .site-name a{
   color: #ffffff;
-  padding: 20px 0 0 0;
   display: block;
-  width: 630px;
-  overflow: hidden;
   text-shadow:0 1px 1px rgba(0,0,0,0.3);
 }
 
 #header .site-slogan {
   color: #ffffff;
   margin: -5px 0 0 400px;
-	font: italic 4.6em Palatino, "Times New Roman", serif;
-	text-align: right;
+  font: italic 2.6em Palatino, "Times New Roman", serif;
+  text-align: right;
 }
 
-#header-right-content {
-	float: right;
-	width: 292px;
+#header-bottom-content {
+	/*float: right;
+	width: 292px;*/
 }
 
 #header-search {
@@ -193,7 +190,6 @@ body.page-cutup-home #main {
 	margin: 35px 12px 0 0;
 	padding: 10px;
 	width: 270px;
-	display: none;
 }
 
 #block-search-form h2 {visibility: hidden; font-size: 1px; line-height: 0;} 
@@ -2047,6 +2043,56 @@ background: url("../img/bg-footer-divide.png") repeat-x scroll center bottom tra
 padding: 15px 0px 9px 0;
 }
 
+#header-subscribe {
+  float: right;
+  padding: 10px 0 0;
+  width: 380px;
+}
+
+#header-subscribe .form-item,
+#header-subscribe .form-actions {
+float:left;
+}
+#header-subscribe label {
+  color: #FFF;
+  font-family: Arial, sans-serif;
+  float: left;
+  padding: 8px 8px 0 0;
+  font-weight: normal;
+	margin:0;
+}
+#header-subscribe label .form-required {
+  display:none
+}
+#header-subscribe input {
+  background: url(../img/bg-form-field.png);
+  padding: 5px 10px;
+  margin:0px;
+  border: 1px solid #CCC;
+  color: #999;
+  font-family: Georgia, serif;
+  font-size: 1.167em;
+  font-style: italic;
+  width: 180px;
+  float: left;
+}
+
+
+#footer-logo-subscribe label {
+}
+
+#header-subscribe input.form-submit {
+background: url(../img/button-get-updates.png) no-repeat;
+border: none;
+cursor: pointer;
+height: 30px;
+text-indent: -9999px;
+width: 105px;
+font-size: 0;
+line-height: 0;
+float: left;
+}
+
 #footer-subscribe {
   float: right;
   padding: 10px 0 0;
@@ -2057,6 +2103,7 @@ padding: 15px 0px 9px 0;
 #footer-subscribe .form-actions {
 float:left;
 }
+
 #footer-subscribe label {
   color: #FFF;
   font-family: Arial, sans-serif;
