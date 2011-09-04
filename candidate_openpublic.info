@@ -7,7 +7,6 @@ base theme = openpublic_theme
 stylesheets[all][]   = css/editor.css
 
 ; CSS styles for this theme
-;stylesheets[all][]   = css/candidate_openpublic.css
 stylesheets[all][]   = css/openpublic_theme.css
 
 ; IE 8 and below stylesheet
