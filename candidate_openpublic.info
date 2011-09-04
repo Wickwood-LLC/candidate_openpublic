@@ -7,7 +7,7 @@ base theme = openpublic_theme
 ; stylesheets[all][]   = css/editor.css
 
 ; CSS styles for this theme
-; stylesheets[all][]   = css/openpublic_crest.css
+stylesheets[all][]   = css/candidate_openpublic.css
 
 ; IE 8 and below stylesheet
 ; stylesheets-conditional[lte IE 8][all][] = css/openpublic_crest_ie8.css
