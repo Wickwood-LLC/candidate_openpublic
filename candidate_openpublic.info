@@ -4,16 +4,17 @@ name = Candidate OpenPublic
 base theme = openpublic_theme
 
 ; CSS styles for this theme
-; stylesheets[all][]   = css/editor.css
+stylesheets[all][]   = css/editor.css
 
 ; CSS styles for this theme
-stylesheets[all][]   = css/candidate_openpublic.css
+;stylesheets[all][]   = css/candidate_openpublic.css
+stylesheets[all][]   = css/openpublic.css
 
 ; IE 8 and below stylesheet
-; stylesheets-conditional[lte IE 8][all][] = css/openpublic_crest_ie8.css
+stylesheets-conditional[lte IE 8][all][] = css/openpublic_ie8.css
 
 ; IE 7 and below stylesheet
-; stylesheets-conditional[lte IE 7][all][] = css/openpublic_crest_ie7.css
+stylesheets-conditional[lte IE 7][all][] = css/openpublic_ie7.css
 
 regions[sidebar_first] = First sidebar
 regions[sidebar_second] = Second sidebar
@@ -32,10 +33,4 @@ regions[help] = Help
 features[] = main_menu
 features[] = logo
 features[] = name
-
-; Information added by drupal.org packaging script on 2011-08-19
-; version = "7.x-1.0-beta2"
-; core = "7.x"
-; project = "openpublic"
-; datestamp = "1313763720"
 
