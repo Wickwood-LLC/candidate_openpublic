@@ -8,7 +8,7 @@ stylesheets[all][]   = css/editor.css
 
 ; CSS styles for this theme
 ;stylesheets[all][]   = css/candidate_openpublic.css
-stylesheets[all][]   = css/openpublic.css
+stylesheets[all][]   = css/openpublic_theme.css
 
 ; IE 8 and below stylesheet
 stylesheets-conditional[lte IE 8][all][] = css/openpublic_ie8.css
