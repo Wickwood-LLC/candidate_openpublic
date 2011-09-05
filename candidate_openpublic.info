@@ -22,14 +22,15 @@ regions[inner_second] = Second Inner
 regions[content_prefix] = On Top of Content
 regions[content] = Content
 regions[content_suffix] = Underneath the Content
-regions[header] = Header
+regions[header_top] = Header Top
+regions[header_bottom] = Header Bottom
 regions[footer] = Footer
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
 regions[help] = Help
 
 ;features[] = favicon
-features[] = main_menu
-features[] = logo
-features[] = name
+;features[] = main_menu
+;features[] = logo
+;features[] = name
 
