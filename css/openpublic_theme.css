@@ -1,6 +1,8 @@
 /* @override 
-	http://almaikels-com:8888/sites/all/themes/opcandidate/css/candidate_openpublic.css?lqz8k0
-	http://almaikels-com:8888/sites/all/themes/opcandidate/css/candidate_openpublic.css?lr0ei0
+	http://almaikels-com:8888/sites/all/themes/opcandidate/css/openpublic_theme.css?lr0ooj
+	http://almaikels-com:8888/sites/all/themes/opcandidate/css/openpublic_theme.css?lr0znx
+	http://almaikels-com:8888/sites/all/themes/opcandidate/css/openpublic_theme.css?lr11gj
+	http://almaikels-com:8888/sites/all/themes/opcandidate/css/openpublic_theme.css?lr127e
 */
 
 @charset "UTF-8";
@@ -145,7 +147,7 @@ body.page-cutup-home #main {
 #header .title{
 	float: left;
     width: 100%;
-    height:230px;
+    height:250px;
     background: url(../img/bg-header-glow.png) no-repeat 76px 0;
 }
 #header .logo{
@@ -156,6 +158,7 @@ body.page-cutup-home #main {
 	position: absolute;
 	z-index: 500;
 	top: 40px;
+	left: 100px;
 }
 
 #header .site-name {
@@ -164,7 +167,7 @@ body.page-cutup-home #main {
    font-family: Palatino, "Times New Roman", serif;
    margin-left: 400px;
    white-space: normal;
-   text-align: left;
+   text-align: center;
 }
 
 #header .site-name a{
@@ -177,7 +180,14 @@ body.page-cutup-home #main {
   color: #ffffff;
   margin: -5px 0 0 400px;
   font: italic 2.6em Palatino, "Times New Roman", serif;
-  text-align: right;
+  text-align: center;
+}
+#header-top-content {
+	
+}
+
+#header-top-content .section-content {
+	
 }
 
 #header-bottom-content {
@@ -2044,9 +2054,13 @@ padding: 15px 0px 9px 0;
 }
 
 #header-subscribe {
-  float: right;
-  padding: 10px 0 0;
-  width: 380px;
+  margin-left: 400px;
+}
+
+#header-subscribe #subscribe-form {
+	width: 380px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #header-subscribe .form-item,
@@ -2092,6 +2106,33 @@ font-size: 0;
 line-height: 0;
 float: left;
 }
+
+#header 
+#header-top-content div.title div.site-name div.region.region-header-top .section-content {
+	background: transparent none repeat-x;
+	margin: 10px 0 0;
+	padding: 0;
+}
+
+#header 
+#header-top-content div.title div.site-name div.region.region-header-top .section-content h2 {
+	color: white;
+	font-weight: normal;	
+	font-size: 1em;
+	padding: 10px 15px 20px 15px;
+	border-style: none;
+}
+
+#header 
+#header-top-content div.title div.site-name div.region.region-header-top .section-content h3 {
+	color: white;
+	font-weight: normal;	
+	font-size: .8em;
+	padding: 10px 15px 20px 15px;
+	border-style: none;
+}
+
+
 
 #footer-subscribe {
   float: right;

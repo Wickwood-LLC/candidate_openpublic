@@ -17,25 +17,39 @@
       <div id="header-top-content" class="clearfix">
 				<div class = 'title'>
 					<?php if ($logo) {print $header_logo;} ?>
-					<?php if ($site_name) : ?>
-						<div class = 'site-name'><?php print l($site_name, $front_page) ?></div>
+					<?php if ( $site_name || $page['header_top'] ) : ?>
+						<div class = 'site-name'>
+							<?php
+							  if ( $page['header_top'] ) {
+							    print render($page['header_top']);
+							  } else {
+							    print l($site_name, $front_page);
+							  }
+							?>
+						</div>
 					<?php endif; ?>
 	
 					<?php if ($site_slogan = variable_get('site_slogan')) : ?>
 						<div class = 'site-slogan'><?php print $site_slogan; ?></div>
 					<?php endif; ?>
+
+					<?php if ( $subscribe_form ) : ?>
+					  <div id="header-subscribe">
+						<div id="subscribe-form">
+					      <?php print drupal_render($subscribe_form)  ?>
+					    </div>
+				      </div>
+				    <?php endif; ?>
 				</div>
       </div><!--/header top content--> 
       
       <div id="header-bottom-content" class="clearfix">
-        
-        <div id="header-search" class="clearfix">
-          <?php print render($page['header']); ?>
-        </div><!--/header search-->
-        
-        <div id="header-subscribe">
-					<?php print drupal_render($subscribe_form)  ?>
-				</div>
+
+        <?php if ( $page['header_bottom'] ) : ?>
+        	<div id="header-search" class="clearfix">
+          		<?php print render($page['header_bottom']); ?>
+        	</div><!--/header search-->
+        <?php endif; ?>
               
       </div><!--/header bottom content-->
 
