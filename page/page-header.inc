@@ -9,9 +9,6 @@
 <div id="page-wrapper" class="clearfix">
  
   <div id="header"> 
-    <div id="user-menu-wrap" >
-      <?php print $menu_utility ?>
-    </div>
     <div id="header-inner" class="clearfix center-on-page">
       
       <div id="header-top-content" class="clearfix">
