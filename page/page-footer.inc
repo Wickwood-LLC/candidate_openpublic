@@ -17,7 +17,7 @@
 
   <div class="clearfix" id="footer-logo-subscribe">
 
-        <?php print $footer_logo ?>
+        <?php print l(theme('image', array('path'=>drupal_get_path('theme', 'candidate_openpublic') . "/logo-sm.png", 'alt'=>"$site_name logo")), '', array("html"=>TRUE, 'attributes'=>array('class'=>'logo'))); ?>
         <?php if ($site_name) : ?>
           <div class = 'site-name'><?php print l($site_name, $front_page) ?></div>
         <?php endif; ?>
