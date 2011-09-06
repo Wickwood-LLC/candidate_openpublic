@@ -1,9 +1,4 @@
-/* @override 
-	http://almaikels-com:8888/sites/all/themes/opcandidate/css/openpublic_theme.css?lr0ooj
-	http://almaikels-com:8888/sites/all/themes/opcandidate/css/openpublic_theme.css?lr0znx
-	http://almaikels-com:8888/sites/all/themes/opcandidate/css/openpublic_theme.css?lr11gj
-	http://almaikels-com:8888/sites/all/themes/opcandidate/css/openpublic_theme.css?lr127e
-*/
+/* @override http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/openpublic_theme.css?lr2ifn */
 
 @charset "UTF-8";
 
@@ -133,7 +128,7 @@ body.page-cutup-home #main {
 
 #footer-inner {
   background: url(../img/bg-footer.png) no-repeat;
-  min-height: 200px;
+  min-height: 250px;
 }
 
 
@@ -1195,6 +1190,7 @@ body.page-blogs .read-more a:hover {
 .node-blog-entry p, .view-blogs p, .panel-author-page p, #main p {
   line-height: 170%;
   margin: 0 20px 20px 0;
+	color: black;
 }
 
 .node-blog-entry ol li {margin-left: 33px;}
@@ -1208,7 +1204,7 @@ body.page-blogs .read-more a:hover {
 .node-blog-entry li, .view-blogs .views-row li {
 	margin: 0 0 8px 25px;
 	color: #666;
-	 line-height: 130%;
+	line-height: 130%;
 }
 
 .node-blog-entry p a, .view-blogs p a, .panel-author-page p a,
@@ -2002,6 +1998,7 @@ text-decoration: none;
   margin: 0 15px 30px 15px;
   padding: 20px 0 0;
   float:left;
+	width: 70%;
 }
 #footer-nav ul {
 	margin:0;
@@ -2209,7 +2206,7 @@ float: left;
 
 #footer-utility {
 float: right;
-padding: 20px 0 0;
+padding: 0;
 }
 #footer-utility li {
   font-family: Arial,sans-serif;
@@ -2218,6 +2215,7 @@ padding: 20px 0 0;
   padding-top: 0;
   text-transform: uppercase;
   float:none;
+  font-size: .9em;
 }
 .region-footer .section-content {
   background: transparent;
@@ -2234,6 +2232,13 @@ padding: 20px 0 0;
   font-size: 0.917em;
   padding: 15px 0 25px;
   text-align: center;
+}
+.region-footer p {
+	color: #677B87;
+  	font-family: Arial,sans-serif;
+  	font-size: 0.917em;
+	padding: 15px 0 25px;
+  	text-align: center;
 }
 
 /* System/admin styles */
@@ -2313,4 +2318,36 @@ ul.action-links {
 ul.action-links li {
   margin-left: 0px;
   margin-right: 15px;
+}
+
+/* Styling for Maintenance Page */
+
+body.maintenance-page.in-maintenance.no-sidebars {
+	text-align: center;
+	color: white;
+}
+
+body.maintenance-page.in-maintenance.no-sidebars #page {
+	margin-top: 10%;
+}
+
+body.maintenance-page.in-maintenance.no-sidebars div#container{
+	text-align: center;
+}
+
+body.maintenance-page.in-maintenance.no-sidebars div#container div#main.column {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body.maintenance-page.in-maintenance.no-sidebars #site-name a, 
+body.maintenance-page.in-maintenance.no-sidebars h1#page-title {
+	color: white;
+}
+
+/* Context Styling */
+
+a#context-block-region-header_top.context-block-region {
+	display: none;
 }
