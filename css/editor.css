@@ -1,3 +1,5 @@
+/* @override http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/editor.css?lr2ifn */
+
 @charset "UTF-8";
  
 /* Handy font size definitions 
@@ -38,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 p {
-  color:#666666;
+  color: black;
   font-size:1.083em;
 }
 
@@ -51,9 +53,11 @@ img, a img {
 dl {
   margin: .5em 0 1em;
   padding: 0;
+  color: black;
 }
 dl dd {
   margin: 0 0 .5em 1.5em;
+  color: black;
 }
 
 
@@ -169,7 +173,7 @@ hr {}
 
 ul, ol {margin: 20px 0; padding: 0;}
 ul li, ol li {
-  color:#666666;
+  color: black;
   font-size:1.083em;
   margin: 0 15px 5px 20px;
 }
@@ -177,4 +181,5 @@ ul li, ol li {
 
 ol li {
   margin: 0 15px 5px 25px;
+  color: black;
 }
