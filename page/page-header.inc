@@ -29,7 +29,7 @@
 					<?php if ($site_slogan = variable_get('site_slogan')) : ?>
 						<div class = 'site-slogan'><?php print $site_slogan; ?></div>
 					<?php endif; ?>
-
+				</div>
       </div><!--/header top content--> 
       
       <div id="header-bottom-content" class="clearfix">
