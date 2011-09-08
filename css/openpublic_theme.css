@@ -1,5 +1,5 @@
 /* @override 
-	http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/openpublic_theme.css?lr6mhl
+	http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/openpublic_theme.css?lr6py5
 */
 
 @charset "UTF-8";
@@ -2195,11 +2195,10 @@ float: left;
   padding: 12px 0 0 8px;
   text-shadow:0 2px 2px rgba(0,0,0,0.6);
   float:left;
-	margin: 10px 0 0;
 }
 
 #footer .site-name a{
-  font-size: .6em;
+  font-size: 2em;
   color: #ffffff;
 }
 
