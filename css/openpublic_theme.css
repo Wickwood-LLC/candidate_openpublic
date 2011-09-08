@@ -1,4 +1,6 @@
-/* @override http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/openpublic_theme.css?lr2ifn */
+/* @override 
+	http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/openpublic_theme.css?lr6119
+*/
 
 @charset "UTF-8";
 
@@ -37,9 +39,9 @@ a:hover, a:active {
   -moz-box-shadow: 0 17px 10px rgba(0,0,0,.9);
   box-shadow: 0 17px 10px rgba(0,0,0,.9);
 }
+
 .front #wrap-inner {
   background: #FFF;
-
 }
 
 
@@ -529,7 +531,7 @@ img.photo {
 	font-weight: normal;	
 	font-size: 1.3em;
 	padding: 10px 15px 20px 15px;
-	border-top: 3px solid #0673ab;
+	/* border-top: 3px solid #0673ab; */
 }
 
 
@@ -669,6 +671,7 @@ h1#page-title {
 	color: #414448;
 	font-size: 2em;
 	line-height: 130%;
+	text-align: center;
 }
 
 .divide-double-line {
@@ -1188,9 +1191,9 @@ body.page-blogs .read-more a:hover {
 }
 
 .node-blog-entry p, .view-blogs p, .panel-author-page p, #main p {
-  line-height: 170%;
-  margin: 0 20px 20px 0;
-	color: black;
+  line-height: 140%;
+  margin: 0 20px 10px 0;
+  color: black;
 }
 
 .node-blog-entry ol li {margin-left: 33px;}
@@ -2350,4 +2353,39 @@ body.maintenance-page.in-maintenance.no-sidebars h1#page-title {
 
 a#context-block-region-header_top.context-block-region {
 	display: none;
+}
+
+/* Donate Form Styling */
+
+#node-117 div.node-inner.node-content div.content div.node_117 form {
+	text-align: center;
+}
+
+#node-117 div.node-inner.node-content div.meta div.submitted {
+	display: none;
+}
+
+/* Front Page Quotation Styling */
+
+#front-page-quote-container {
+	position: relative;
+}
+#front-page-quote-inner {
+	position: absolute;
+	width: 600px;
+	text-align: center;
+	top: 75px;
+}
+
+#front-page-quote-inner h2 {
+	font-size: 1.8em;
+	
+}
+
+/* MailChimp Form Styling */
+.block-mailchimp-lists {
+	border: 2px solid #0673ab;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
 }
