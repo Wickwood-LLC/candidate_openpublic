@@ -1,5 +1,5 @@
 /* @override 
-	http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/openpublic_theme.css?lr6119
+	http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/openpublic_theme.css?lr6mhl
 */
 
 @charset "UTF-8";
@@ -2184,11 +2184,6 @@ float: left;
 #footer-logo-subscribe .form-text {
 }
 
-
-
-
-
-
 #footer .logo{
 	float: left;
 	margin: 0 6px 0 5px;
@@ -2200,10 +2195,11 @@ float: left;
   padding: 12px 0 0 8px;
   text-shadow:0 2px 2px rgba(0,0,0,0.6);
   float:left;
+	margin: 10px 0 0;
 }
 
 #footer .site-name a{
-  font-size: 2em;
+  font-size: .6em;
   color: #ffffff;
 }
 
