@@ -1,6 +1,7 @@
 /* @override 
 	http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/openpublic_theme.css?lr6py5
 	http://almaikels-com:8888/sites/all/themes/opcandidate/css/openpublic_theme.css?lr17sr
+	http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/openpublic_theme.css?lr9zje
 */
 
 @charset "UTF-8";
@@ -2366,16 +2367,18 @@ a#context-block-region-header_top.context-block-region {
 	position: relative;
 }
 #front-page-quote-inner {
-	position: absolute;
-	width: 600px;
 	text-align: center;
-	top: 75px;
 }
 
 #front-page-quote-inner h2 {
-	font-size: 1.8em;
+	font-size: 1.6em;
 	
 }
+
+div#block-block-2.block.block-block.contextual-links-region.section-content {
+	background-image: none;
+}
+
 
 /* MailChimp Form Styling */
 .block-mailchimp-lists {
