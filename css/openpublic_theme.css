@@ -1,5 +1,6 @@
 /* @override 
 	http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/openpublic_theme.css?lr6py5
+	http://almaikels-com:8888/sites/all/themes/opcandidate/css/openpublic_theme.css?lr17sr
 */
 
 @charset "UTF-8";
@@ -145,7 +146,7 @@ body.page-cutup-home #main {
 	float: left;
     width: 100%;
     height:260px;
-    background: url(../img/bg-header-glow.png) no-repeat 76px 0;
+    background: url(../img/bg-header-glow.png) no-repeat 26px 0;
 }
 #header .logo{
 	float: left;
@@ -171,16 +172,15 @@ body.page-cutup-home #main {
 
 #header .site-slogan {
   color: #ffffff;
-  margin: -5px 0 0 400px;
   font: italic 2.6em Palatino, "Times New Roman", serif;
   text-align: center;
+	margin: 10px 0 0 400px;
 }
 #header-top-content {
-	
 }
 
-#header-top-content .section-content {
-	
+#block-block-1 div.content {
+	margin-top: 30px;
 }
 
 #header-bottom-content {
