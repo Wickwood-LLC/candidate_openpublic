@@ -2375,7 +2375,7 @@ a#context-block-region-header_top.context-block-region {
 	
 }
 
-div#block-block-2.block.block-block.contextual-links-region.section-content {
+div#block-block-2.section-content {
 	background-image: none;
 }
 
@@ -2387,3 +2387,18 @@ div#block-block-2.block.block-block.contextual-links-region.section-content {
 	padding-left: 10px;
 	text-align: center;
 }
+#block-block-3 {
+	border: 2px solid #0673ab;
+	text-align: center;
+}
+#block-block-3.section-content {
+	border: 2px solid #0673ab;
+	text-align: center;
+}
+
+#mc_embed_signup {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
