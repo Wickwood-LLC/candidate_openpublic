@@ -35,4 +35,28 @@
   text-shadow: none;
 }
 
+/* Extra styling of Header */
+#block-block-1 div.content {
+	margin-top: 0px;
+}
+#header .title{
+    height:240px;
+}
+#header .site-slogan {
+	margin: 5px 0 0 400px;
+}
+/*
+#header .logo{
+	float: left;
+	padding: 8px 2px 0 30px;
+	margin-top: 20px;
+}
+*/
+/* Extra styling of Home Rotator */
+#home-top-read-more {
+  margin: 35px 0 15px 140px;
+}
+
+
+
 
