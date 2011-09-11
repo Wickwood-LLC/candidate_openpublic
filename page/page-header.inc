@@ -21,14 +21,15 @@
 							    print render($page['header_top']);
 							  } else {
 							    print l($site_name, $front_page);
+							    if ($site_slogan = variable_get('site_slogan')) : ?>
+										<div class = 'site-slogan'><?php print $site_slogan; ?></div>
+									<?php endif;
 							  }
 							?>
 						</div>
 					<?php endif; ?>
 	
-					<?php if ($site_slogan = variable_get('site_slogan')) : ?>
-						<div class = 'site-slogan'><?php print $site_slogan; ?></div>
-					<?php endif; ?>
+					
 				</div>
       </div><!--/header top content--> 
       
