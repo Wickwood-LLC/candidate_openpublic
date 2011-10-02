@@ -1,5 +1,6 @@
-/* @override
+/* @override 
 	http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/editor.css?lr6119
+	http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/editor.css?lsf0z0
 */
 
 @charset "UTF-8";
@@ -43,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: black;
-  font-size:1.167em;
+  font-size:1.25em;
 }
 
 

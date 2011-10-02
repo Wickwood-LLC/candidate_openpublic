@@ -1,7 +1,6 @@
 /* @override 
-	http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/openpublic_theme.css?lr6py5
-	http://almaikels-com:8888/sites/all/themes/opcandidate/css/openpublic_theme.css?lr17sr
-	http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/openpublic_theme.css?lr9zje
+	http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/openpublic_theme.css?lsf411
+	http://dev.almaikels.com/sites/dev.almaikels.com/themes/candidate_openpublic/css/openpublic_theme.css?lsf4ad
 */
 
 @charset "UTF-8";
@@ -2400,5 +2399,59 @@ div#block-block-2.section-content {
 	margin-right: auto;
 	margin-left: auto;
 }
+
+/* Contact Form Styling */
+.node-content .webform-client-form label {
+	margin-right: 1em;
+	color: black;
+	font-size: 1.2em;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding: 0;
+	margin-top: 9px;
+}
+
+.webform-client-form div.description {
+	color: black;
+    font-size:1em;
+	display: inline-block;
+	margin-left: 165px;
+}
+
+#webform-component-mailing-address legend {
+	font-weight: bold;
+}
+
+
+#edit-actions fieldset.captcha.form-wrapper legend {
+	text-align: left;
+	font-weight: bold;
+}
+
+#edit-actions fieldset.captcha.form-wrapper div.fieldset-wrapper div.fieldset-description {
+	text-align: left;
+}
+
+#recaptcha_area {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.recaptcha_input_area {
+	position: relative;
+}
+
+
+input#recaptcha_response_field {
+	position: absolute;
+	top: 15px;
+	left: 0;
+}
+
+
+
+
+
 
 
