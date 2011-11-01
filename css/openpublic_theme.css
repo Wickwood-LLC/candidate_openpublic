@@ -1,5 +1,5 @@
-/* @override 
-	http://dev.bryanclenahan.com/sites/dev.bryanclenahan.com/themes/candidate_openpublic/css/openpublic_theme.css?lrc2ep
+/* @override
+		http://dev.bryanclenahan.com/sites/dev.bryanclenahan.com/themes/candidate_openpublic/css/openpublic_theme.css?ltv32z
 */
 
 @charset "UTF-8";
@@ -17,7 +17,7 @@ font-size: 1.5em;    16px x 1.5    = 24px
 
 /************ Styles that define the layout of the page.   Includes info about width, height, margins, padding and float info *************/
 body {
-  background: #001B2C url(../img/bg-page.jpg) repeat-x;
+  background: #4283bd none repeat-x;
 }
 
 a:hover, a:active {
@@ -129,7 +129,7 @@ body.page-cutup-home #main {
 #footer {}
 
 #footer-inner {
-  background: url(../img/bg-footer.png) no-repeat;
+  background: none no-repeat;
   min-height: 250px;
 }
 
@@ -153,34 +153,34 @@ body.page-cutup-home #main {
 }
 #header .logo img{
 	height: 280px;
-	margin-left: 15px;
+	margin-left: 65px;
 }
 
 #header .site-name {
-   font-size: 2.8em;
-   letter-spacing: -0.04em;
-   font-family: Palatino, "Times New Roman", serif;
-   margin-left: 250px;
    white-space: normal;
    text-align: center;
+   font: italic bold 2.8em Verdana, Lucida, "Lucida Grande", sans-serif;
+   text-shadow:0 2px 2px rgba(0,0,0,0.6);
+	letter-spacing: .03em;
 }
 
 #header .site-name a{
   color: #ffffff;
   display: block;
-  text-shadow:0 1px 1px rgba(0,0,0,0.3);
+  text-shadow:0 5px 4px rgba(0,0,0,0.6);
 }
 
 #header .site-slogan {
   color: #ffffff;
-  font: italic 0.7em Palatino, "Times New Roman", serif;
+  font: italic bold 0.5em Verdana, Lucida, "Lucida Grande", sans-serif;
   text-align: center;
+  text-shadow:0 2px 2px rgba(0,0,0,0.6);
 }
 #header-top-content {
 }
 
 #block-block-1 div.content {
-	margin-top: 30px;
+	margin-top: 18px;
 }
 
 #block-block-4 div.content p {
@@ -190,11 +190,12 @@ body.page-cutup-home #main {
 	position: relative;
 	margin-top: 15px;
 	margin-bottom: 0;
+	letter-spacing: 0;
 }
 
 #block-block-4 div.content p img {
 	position: absolute;
-	top: -30px;
+	top: -28px;
 	right: 0;
 	overflow: visible;
 }
@@ -265,9 +266,9 @@ form#search-block-form input.form-submit {
 	display: block;
 	color: #666;
 	display: block;
-	padding: 14px 20px;
 	text-align: center;
 	text-decoration: none;
+	padding: 18px 20px 13px;
 }
 
 #navigation li.active-trail a,
@@ -275,17 +276,17 @@ form#search-block-form input.form-submit {
 #navigation li a:hover,
 #navigation li a:focus,
 #navigation ul li:hover a {
-	background: url(../img/bg-nav-over.png) repeat-x;
-	border-right: 1px solid #FFF;
-	border-left: 1px solid #FFF;
+	border-right: 1px solid silver;
+	border-left: 1px solid silver;
 	padding-left: 19px;
 	padding-right: 19px;
-	color: #333;
+	color: rgba(0,135,69,0.76);
+	background: url(../img/bg-nav-over.png) repeat-x;
 }
 
 #navigation li.active-trail a,
 #navigation li.active a {
-	color: #333;
+	color: rgba(0,135,69,0.76);
 }
 /******* Drop-down Navigation ******/
 
@@ -432,7 +433,7 @@ li.nav-button a {
 
 #home-services-for-you li.entry {
 	width: 140px;
-	margin: 0 18px;
+	margin: 0px 18px 0;
 	font-style: italic;
 }
 
@@ -454,12 +455,14 @@ li.nav-button a {
 }
 
 #home-services-for-you li.entry h4 {
-	font-size: 	1.083em;
-	margin: 5px 0 0;
-	font-style: italic;
-	font-family: Georgia, serif;
+	text-align: center;
+	font: italic .9em Georgia, serif;
+	height: 130px;
+	margin-top: 0;
 }
-
+#services-carousel {
+	margin-top: -10px;
+}
 body.front .section-content .views-field-entity-id {
   line-height:1.4em;
   font-family: Georgia, serif;
@@ -512,6 +515,7 @@ img.photo {
 	background: #FFF url(../img/bg-fuz.png) repeat-x;
 	margin: 10px 0;
 }
+
 .section-content .section-content {
 	padding-bottom: 15px;
 	background: transparent;
@@ -1419,6 +1423,7 @@ ul#related-terms {
 	-webkit-border-radius:5px;
 	border-radius:5px;
 }
+
 .download-link a,
 .file a {
 	background:url(../img/download-btn-icon.png) no-repeat top right;
@@ -1970,12 +1975,6 @@ body.page-cutup-press-detail #main .date-tag a {
  }
 
 
-
-
-
-
-
-
 /***** Utility Nav *****/
 #user-menu-wrap {
     background: url("../img/bg-utility-nav.png") repeat-x scroll 0 0 transparent;
@@ -2054,10 +2053,16 @@ text-shadow: none;
 text-transform: none;
 }
 #footer-nav li li a {
-    color: #179BCD;
+    color: #feffff;
     }
 #footer-nav li li a:hover, #footer-nav li li a:focus {
   color: #7EDAF8;
+}
+
+#header-subscribe #subscribe-form {
+	width: 380px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #footer-logo-subscribe {
@@ -2067,12 +2072,6 @@ padding: 15px 0px 9px 0;
 
 #header-subscribe {
   margin-left: 400px;
-}
-
-#header-subscribe #subscribe-form {
-	width: 380px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 #header-subscribe .form-item,
@@ -2206,7 +2205,7 @@ float: left;
 }
 
 #footer .site-name{
-	font-family: "Palatino Linotype", "Book Antiqua3", Palatino, serif;
+	font-family: Verdana, Lucida, "Lucida Grande", sans-serif;
   font-weight: normal;
   padding: 12px 0 0 8px;
   text-shadow:0 2px 2px rgba(0,0,0,0.6);
@@ -2241,7 +2240,7 @@ padding: 0;
   display:none;
 }
 .region-footer .address-location {
-  color: #677B87;
+  color: #feffff;
   font-family: Arial,sans-serif;
   font-size: 0.917em;
   padding: 15px 0 25px;
@@ -2395,7 +2394,7 @@ div#block-block-2.section-content {
 }
 
 
-/* MailChimp Form Styling */
+/* MailChimp Block Form Styling */
 .block-mailchimp-lists {
 	border: 2px solid #0673ab;
 	padding-right: 10px;
@@ -2415,5 +2414,117 @@ div#block-block-2.section-content {
 	margin-right: auto;
 	margin-left: auto;
 }
+/* MailChimp Page Form Styling */
+
+#mc-embedded-subscribe-form h2 {
+	color: #007e3f;
+	text-align: center;
+}
+
+#mc-embedded-subscribe-form div.mc-field-group.input-group ul li label {
+	margin-left: 10px;
+}
+
+
+/* Styling for Front Page Rotator */
+
+div.home-rotator-photo {
+	margin-top: 5px;
+}
+
+/* Styling for Accomplishments Views */
+.view-id-nodequeue_issues div.views-row,
+.view-id-nodequeue_accomplishments div.views-row {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.view-id-nodequeue_issues div.views-field.views-field-title,
+.view-id-nodequeue_accomplishments div.views-field.views-field-title {
+	font-size: 1.0625em;
+	text-align: center;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+span.field-content {
+	color: black;
+  font-size:1.167em;
+}
+
+/* Styling for Facebook Like Box */
+#block-block-5 {
+	background-image: none;
+	border-style: none;
+}
+div#right-rail div#block-block-5.block.block-block.contextual-links-region.section-content {
+	background-image: none;
+	border-style: none;
+}
+
+/* Contact Webform Styling */
+
+#webform-component-your-message label {
+	margin-right: 1em;
+}
+
+/* Styling for Newsletter View */
+
+.view-id-nodequeue_newsletters div.views-field.views-field-field-document-attachment div.field-content span.file {
+	display: block;
+	width: 230px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* Front Page Block Styling */
+div#block-block-6.block.block-block.contextual-links-region.section-content,
+div#block-block-7.block.block-block.contextual-links-region.section-content
+ {
+	background-image: none;
+}
+
+#block-block-6 h3,
+#block-block-7 h3
+ {
+	text-align: center;
+	color: #007e3f;
+	font-weight: bold;
+	padding-bottom: 10px;
+	font-size: 1.3em;
+	padding-top: 10px;
+	line-height: 1.5em;
+}
+
+#block-block-6 div.content h2,
+#block-block-7 div.content h2 {
+	margin-top: 15px;
+	text-align: center;
+}
+
+#block-block-6 div.content p,
+#block-block-7 div.content p,
+#block-block-6 div.content ul li,
+#block-block-6 div.content ol li,
+#block-block-7 div.content ul li,
+#block-block-7 div.content ol li
+ {
+  	color: black;
+  	margin: 0 15px 5px 20px;
+	font: 1.167em Verdana, "Lucida Grande", Lucida, sans-serif;
+}
+#block-block-6 div.content ul li,
+#block-block-6 div.content ol li,
+#block-block-7 div.content ul li,
+#block-block-7 div.content ol li {
+	margin-bottom: 12px;
+}
+
+
+
+
+
+
 
 
