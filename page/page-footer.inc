@@ -22,7 +22,7 @@
 			</div>
 			
 			<div id="footer-nav">
-				<?php print drupal_render($footer_menu); ?>
+				<?php // print drupal_render($footer_menu); ?>
 			</div>
 			
 			<?php print $footer_utility ?>
