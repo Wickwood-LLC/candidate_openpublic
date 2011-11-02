@@ -1,19 +1,29 @@
 core = 7.x
 description = Blue Theme for Candidate websites using OpenPublic, sub-theme of OpenPublic Theme
 name = Candidate OpenPublic
-base theme = openpublic_theme
+; base theme = openpublic_theme
 
-; CSS styles for this theme
+; CSS styles and Javascript to override OpenPublic Navigation
+stylesheets[all][] = css/menu.css
+scripts[] = js/menu.js
+
+; Basic styles used in many places across the site
+stylesheets[all][]   = css/basics.css
+
+; CSS styles for default HTML elements.
 stylesheets[all][]   = css/editor.css
 
 ; CSS styles for this theme
-stylesheets[all][]   = css/openpublic_theme.css
+stylesheets[all][]   = css/candidate_openpublic.css
+
+; Print-version styles
+stylesheets[print][] = css/print.css
 
 ; IE 8 and below stylesheet
-stylesheets-conditional[lte IE 8][all][] = css/openpublic_ie8.css
+stylesheets-conditional[lte IE 8][all][] = css/candidate_openpublic_ie8.css
 
 ; IE 7 and below stylesheet
-stylesheets-conditional[lte IE 7][all][] = css/openpublic_ie7.css
+stylesheets-conditional[lte IE 7][all][] = css/candidate_openpublic_ie7.css
 
 regions[sidebar_first] = First sidebar
 regions[sidebar_second] = Second sidebar
@@ -29,8 +39,8 @@ regions[page_top] = Page top
 regions[page_bottom] = Page bottom
 regions[help] = Help
 
-;features[] = favicon
-;features[] = main_menu
-;features[] = logo
-;features[] = name
+features[] = favicon
+features[] = main_menu
+features[] = logo
+features[] = name
 
