@@ -1,5 +1,6 @@
-/* @override
-		http://dev.bryanclenahan.com/sites/dev.bryanclenahan.com/themes/candidate_openpublic/css/openpublic_theme.css?ltv32z
+/* @override 
+	http://dev.bryanclenahan.com/sites/dev.bryanclenahan.com/themes/candidate_openpublic/css/openpublic_theme.css?ltv32z
+	http://dev.bryanclenahan.com/sites/dev.bryanclenahan.com/themes/candidate_openpublic/css/candidate_openpublic.css?lu0bmu
 */
 
 @charset "UTF-8";
@@ -17,7 +18,7 @@ font-size: 1.5em;    16px x 1.5    = 24px
 
 /************ Styles that define the layout of the page.   Includes info about width, height, margins, padding and float info *************/
 body {
-  background: #4283bd none repeat-x;
+  background: #4283bd;
 }
 
 a:hover, a:active {
