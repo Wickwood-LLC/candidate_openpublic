@@ -1,6 +1,8 @@
 /* @override 
 	http://dev.bryanclenahan.com/sites/dev.bryanclenahan.com/themes/candidate_openpublic/css/openpublic_theme.css?ltv32z
 	http://dev.bryanclenahan.com/sites/dev.bryanclenahan.com/themes/candidate_openpublic/css/candidate_openpublic.css?lu0bmu
+	http://dev.bryanclenahan.com/sites/dev.bryanclenahan.com/themes/candidate_openpublic/css/openpublic_theme.css?lwiu43
+	http://dev.bryanclenahan.com/sites/dev.bryanclenahan.com/themes/candidate_openpublic/css/openpublic_theme.css?m1s5vy
 */
 
 @charset "UTF-8";
@@ -196,7 +198,7 @@ body.page-cutup-home #main {
 
 #block-block-4 div.content p img {
 	position: absolute;
-	top: -28px;
+	top: -12px;
 	right: 0;
 	overflow: visible;
 }
@@ -513,7 +515,8 @@ img.photo {
 
 .section-content {
 	padding-bottom: 15px;
-	background: #FFF url(../img/bg-fuz.png) repeat-x;
+	/* background: #FFF url(../img/bg-fuz.png) repeat-x;*/
+	background-image: none;
 	margin: 10px 0;
 }
 
@@ -2448,6 +2451,7 @@ div.home-rotator-photo {
 	font-weight: bold;
 }
 
+div.view-header,
 span.field-content {
 	color: black;
   font-size:1.167em;
@@ -2522,7 +2526,49 @@ div#block-block-7.block.block-block.contextual-links-region.section-content
 	margin-bottom: 12px;
 }
 
+#block-views-frontpage-block-1 {
+	background-image: none;
+}
 
+.first-col #front-page-content {  
+  width: 632px;
+  float: left;
+}
+
+#front-page-content div.views-field.views-field-title {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#front-page-content div.views-field.views-field-title span.field-content a
+ {
+  font-size: 1.167em;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #4283bd;
+	
+}
+
+#front-page-content div.views-field.views-field-title span.field-content a:hover
+{
+	text-decoration: underline;
+}
+
+#front-page-content div.views-field.views-field-field-blog-teaser div.field-content p,
+#front-page-content div.views-field.views-field-field-summary div.field-content
+ {
+  line-height: 140%;
+  margin: 0 20px 10px 0;
+  color: black;
+  font-size:1.167em;
+  font-family: Arial, sans-serif;
+}
+
+
+#front-page-content div.views-field.views-field-field-blog-teaser div.field-content p img {
+	margin: 5px;
+}
 
 
 
