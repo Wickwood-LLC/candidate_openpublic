@@ -1,7 +1,7 @@
 core = 7.x
 description = Blue Theme for Candidate websites using OpenPublic, sub-theme of OpenPublic Theme
 name = Candidate OpenPublic
-; base theme = openpublic_theme
+base theme = openomega
 
 ; CSS styles and Javascript to override OpenPublic Navigation
 stylesheets[all][] = css/menu.css
