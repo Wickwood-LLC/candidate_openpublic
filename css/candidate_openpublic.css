@@ -2577,6 +2577,7 @@ div#block-block-7.block.block-block.contextual-links-region.section-content
 	border: 0;
 	width: 136px;
 	height: 130px;
+	background: transparent;
 }
 ul.jcarousel-view--homepage-feature-carousel--block-1 li img {
 	border: 3px solid #999;
@@ -2584,13 +2585,13 @@ ul.jcarousel-view--homepage-feature-carousel--block-1 li img {
 ul.jcarousel-view--homepage-feature-carousel--block-1 li:hover img {
 	border: 3px solid #bebebe;
 }
-ul.jcarousel-view--homepage-feature-carousel--block-1 li .views-field-title {
+ul.jcarousel-view--homepage-feature-carousel--block-1 li .views-field-title a {
 	color: #bebebe;
 	font-weight: 700;
 	text-align: center;
     font: italic .9em Georgia,serif;
 }
-ul.jcarousel-view--homepage-feature-carousel--block-1 li:hover .views-field-title {
+ul.jcarousel-view--homepage-feature-carousel--block-1 li:hover .views-field-title a{
 	color: #dedede;
 }
 
