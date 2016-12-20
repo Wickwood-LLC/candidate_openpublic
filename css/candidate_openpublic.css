@@ -2573,8 +2573,8 @@ div#block-block-7.block.block-block.contextual-links-region.section-content
 #block-views-ac150b966ab7cb32e4bfd8f0c712a4d2 .view-homepage-feature-carousel {
 	background: #FFF url(../img/bg-fuz.png) repeat-x;
 }
-ul.jcarousel-view--homepage-feature-carousel--block-1 li {
-	border: 0
+.jcarousel-skin-default .jcarousel-item {
+	border: 0;
 	width: 136px;
 	height: 130px;
 }
