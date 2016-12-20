@@ -2572,12 +2572,14 @@ div#block-block-7.block.block-block.contextual-links-region.section-content
 
 #block-views-ac150b966ab7cb32e4bfd8f0c712a4d2 .view-homepage-feature-carousel {
 	background: #2c3137 url(../img/bg-services.jpg) no-repeat center top;
+	height: 156px;
 }
 .jcarousel-skin-default .jcarousel-item {
 	border: 0;
 	width: 136px;
 	height: 130px;
 	background: transparent;
+	margin: 0 5px;
 }
 ul.jcarousel-view--homepage-feature-carousel--block-1 li img {
 	border: 3px solid #999;
