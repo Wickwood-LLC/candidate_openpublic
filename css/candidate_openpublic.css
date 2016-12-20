@@ -2570,6 +2570,30 @@ div#block-block-7.block.block-block.contextual-links-region.section-content
 	margin: 5px;
 }
 
+#block-views-ac150b966ab7cb32e4bfd8f0c712a4d2 .view-homepage-feature-carousel {
+	background: #FFF url(../img/bg-fuz.png) repeat-x;
+}
+ul.jcarousel-view--homepage-feature-carousel--block-1 li {
+	border: 0
+	width: 136px;
+	height: 130px;
+}
+ul.jcarousel-view--homepage-feature-carousel--block-1 li img {
+	border: 3px solid #999;
+}
+ul.jcarousel-view--homepage-feature-carousel--block-1 li:hover img {
+	border: 3px solid #bebebe;
+}
+ul.jcarousel-view--homepage-feature-carousel--block-1 li .views-field-title {
+	color: #bebebe;
+	font-weight: 700;
+	text-align: center;
+    font: italic .9em Georgia,serif;
+}
+ul.jcarousel-view--homepage-feature-carousel--block-1 li:hover .views-field-title {
+	color: #dedede;
+}
+
 
 
 
