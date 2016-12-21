@@ -553,6 +553,25 @@ img.photo {
 	position: relative;
 	overflow: hidden;
 }
+.breaking-news {
+    border: 0;
+    margin: 0;
+}
+.breaking-news-header {
+	margin: 7px 30px 0 40px;
+	color: white;
+}
+.breaking-news .headline a {
+	padding: 15px 0;
+}
+.breaking-news span.read-more {
+	padding: 15px 20px 0 5px;
+}
+.breaking-news span.read-more {
+	color: red;
+}
+
+
 .views-field-title h4 {
 	font-size:17px;
 }
