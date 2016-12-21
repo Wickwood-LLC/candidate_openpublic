@@ -567,7 +567,7 @@ img.photo {
 .breaking-news span.read-more {
 	padding: 15px 20px 0 5px;
 }
-.breaking-news span.read-more {
+.breaking-news span.read-more a {
 	color: red;
 }
 
