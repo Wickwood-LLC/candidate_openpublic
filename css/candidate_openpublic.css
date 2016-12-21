@@ -539,6 +539,19 @@ img.photo {
 	background: none;
 	display: inline-block;
     width: 100%;
+
+	border: 2px solid #ae133e;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background: #FFF url(../img/notice-arrow.png) no-repeat;
+	margin: 5px auto;
+	-webkit-box-shadow: 0 2px 8px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 2px 8px rgba(0,0,0,.5);
+	box-shadow: 0 2px 8px rgba(0,0,0,.5);
+	min-height: 45px;
+	position: relative;
+	overflow: hidden;
 }
 .views-field-title h4 {
 	font-size:17px;
