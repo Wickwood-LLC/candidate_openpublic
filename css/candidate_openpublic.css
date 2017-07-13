@@ -1453,8 +1453,7 @@ ul#related-terms {
 .field-name-field-editors-choice-attachments {
   margin: 14px 0;
 }
-.download-link,
-.file {
+.download-link {
 	background:url(../img/download-btn-bg.png) repeat-x;
 	padding:14px 14px 11px;
 	-moz-border-radius:5px;
@@ -2716,4 +2715,3 @@ ul.jcarousel-view--homepage-feature-carousel--block-1 li .views-field-title a {
 ul.jcarousel-view--homepage-feature-carousel--block-1 li:hover .views-field-title a{
 	color: #dedede;
 }
-
