@@ -1,4 +1,4 @@
-/* @override 
+/* @override
 	http://dev.bryanclenahan.com/sites/dev.bryanclenahan.com/themes/candidate_openpublic/css/openpublic_theme.css?ltv32z
 	http://dev.bryanclenahan.com/sites/dev.bryanclenahan.com/themes/candidate_openpublic/css/candidate_openpublic.css?lu0bmu
 	http://dev.bryanclenahan.com/sites/dev.bryanclenahan.com/themes/candidate_openpublic/css/openpublic_theme.css?lwiu43
@@ -7,11 +7,11 @@
 
 @charset "UTF-8";
 
-/* Handy font size definitions 
-font-size: .625em;   16px x .625   = 10px 
-font-size: .6875em;  16px x .6875  = 11px 
-font-size: .75em;    16px x .75    = 12px 
-font-size: .8125em;  16px x .8125  = 13px 
+/* Handy font size definitions
+font-size: .625em;   16px x .625   = 10px
+font-size: .6875em;  16px x .6875  = 11px
+font-size: .75em;    16px x .75    = 12px
+font-size: .8125em;  16px x .8125  = 13px
 font-size: .875em;   16px x .875   = 14px
 font-size: .9375em;  16px x .9375  = 15px
 font-size: 1.0625em; 16px x 1.0625 = 17px
@@ -215,7 +215,7 @@ body.page-cutup-home #main {
 	width: 270px;
 }
 
-#block-search-form h2 {visibility: hidden; font-size: 1px; line-height: 0;} 
+#block-search-form h2 {visibility: hidden; font-size: 1px; line-height: 0;}
 form#search-block-form .form-text {
 	float: left;
 	background: url(../img/bg-form-field.png);
@@ -495,7 +495,7 @@ body.front #main .section-content .views-row p {margin-right: 0; }
 
 
 /******* Common Styles
-********/ 
+********/
 
 .photo img,
 img.photo {
@@ -586,7 +586,7 @@ img.photo {
 }
 .section-content h3 {
 	color: #333;
-	font-weight: normal;	
+	font-weight: normal;
 	font-size: 1.3em;
 	padding: 10px 15px 20px 15px;
 	/* border-top: 3px solid #0673ab; */
@@ -596,7 +596,7 @@ img.photo {
 
 .tweets-pulled-listing h2 {
 	color: #333;
-	font-weight: normal;	
+	font-weight: normal;
 	font-size: 1.3em;
 	padding: 10px 15px 20px 15px;
 	border-top: 3px solid #0673ab;
@@ -611,7 +611,7 @@ ul.tweets-pulled-listing li {font-size: 0.917em; padding: 0 0 9px 0; margin: 0;}
 
 ul.tweets-pulled-listing li a {
     color: #00436F;}
-    
+
 ul.tweets-pulled-listing li a:hover {
   color: #1670AC;
 }
@@ -691,9 +691,9 @@ span.tag {
 }
 
 
-.section-col .read-more, 
-.section-col .more-link, 
-#right-rail .read-more, 
+.section-col .read-more,
+.section-col .more-link,
+#right-rail .read-more,
 #right-rail .more-link {
   margin: 15px;
   text-transform: uppercase;
@@ -1221,7 +1221,7 @@ h2.pane-title {
 }
 
 /******* Blog Page
-********/ 
+********/
 
 body.page-blogs h4 {
 	font-size: 1.5em;
@@ -1257,7 +1257,7 @@ body.page-blogs .read-more a:hover {
 .node-blog-entry ol li {margin-left: 33px;}
 
 .node-blog-entry ul, .node-blog-entry ol,
-.view-blogs .views-row ul, .view-blogs .views-row ol 
+.view-blogs .views-row ul, .view-blogs .views-row ol
  {
 	margin: 20px 0;
 }
@@ -1303,7 +1303,7 @@ body.page-blog h1#page-title {
 .node-blog-entry .author-photo img {
     border: 2px solid #ccc;
 }
-  
+
 .node-blog-entry .submitted {
   color:#999999;
   font-size: 0.917em;
@@ -1984,7 +1984,7 @@ body.page-cutup-staff-list #main .entry h4{
    padding: 9px 0 0 0;
    font-size:1.417em;
   margin-bottom:5px;
-   
+
   }
 
 
@@ -2156,26 +2156,26 @@ line-height: 0;
 float: left;
 }
 
-#header 
+#header
 #header-top-content div.title div.site-name div.region.region-header-top .section-content {
 	background: transparent none repeat-x;
 	margin: 10px 0 0;
 	padding: 0;
 }
 
-#header 
+#header
 #header-top-content div.title div.site-name div.region.region-header-top .section-content h2 {
 	color: white;
-	font-weight: normal;	
+	font-weight: normal;
 	font-size: 1em;
 	padding: 10px 15px 20px 15px;
 	border-style: none;
 }
 
-#header 
+#header
 #header-top-content div.title div.site-name div.region.region-header-top .section-content h3 {
 	color: white;
-	font-weight: normal;	
+	font-weight: normal;
 	font-size: .8em;
 	padding: 10px 15px 20px 15px;
 	border-style: none;
@@ -2317,7 +2317,7 @@ ul.primary li {
 
 .node-site-page .content img {
   }
-  
+
 .node-content .submitted {
   margin: 0 0 15px 0;
   font-size: 1.2em;
@@ -2392,7 +2392,7 @@ body.maintenance-page.in-maintenance.no-sidebars div#container div#main.column {
 	margin-right: auto;
 }
 
-body.maintenance-page.in-maintenance.no-sidebars #site-name a, 
+body.maintenance-page.in-maintenance.no-sidebars #site-name a,
 body.maintenance-page.in-maintenance.no-sidebars h1#page-title {
 	color: white;
 }
@@ -2424,7 +2424,7 @@ a#context-block-region-header_top.context-block-region {
 
 #front-page-quote-inner h2 {
 	font-size: 1.6em;
-	
+
 }
 
 div#block-block-2.section-content {
@@ -2564,7 +2564,7 @@ div#block-block-7.block.block-block.contextual-links-region.section-content
 	background-image: none;
 }
 
-.first-col #front-page-content {  
+.first-col #front-page-content {
   width: 632px;
   float: left;
 }
@@ -2581,7 +2581,7 @@ div#block-block-7.block.block-block.contextual-links-region.section-content
   text-transform: uppercase;
   font-weight: bold;
   color: #4283bd;
-	
+
 }
 
 #front-page-content div.views-field.views-field-title span.field-content a:hover
@@ -2683,7 +2683,7 @@ div#block-block-7.block.block-block.contextual-links-region.section-content
     text-indent: -9000px;
 }
 #home-top-numbers a.activeSlide {
-    background: url(/sites/www.bryanclenahan.com/themes/candidate_openpublic/img/sprite.png) repeat-x -37px 0;
+    background: url(../img/sprite.png) repeat-x -37px 0;
 }
 
 #front-page-content div.views-field.views-field-field-blog-teaser div.field-content p img {
@@ -2716,9 +2716,4 @@ ul.jcarousel-view--homepage-feature-carousel--block-1 li .views-field-title a {
 ul.jcarousel-view--homepage-feature-carousel--block-1 li:hover .views-field-title a{
 	color: #dedede;
 }
-
-
-
-
-
 
