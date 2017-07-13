@@ -60,7 +60,7 @@ function candidate_openpublic_preprocess_html(&$variables) {
   // Add conditional stylesheets for IE
   //drupal_add_css(path_to_theme() . '/css/ie8.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'preprocess' => FALSE));
   //drupal_add_css(path_to_theme() . '/css/ie7.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
-  //drupal_add_css(path_to_theme() . '/css/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 6', '!IE' => FALSE), 'preprocess' => FALSE));  
+  //drupal_add_css(path_to_theme() . '/css/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 6', '!IE' => FALSE), 'preprocess' => FALSE));
 }
 
 /*
@@ -91,7 +91,7 @@ function candidate_openpublic_preprocess_page(&$variables) {
       }
     }
     $menu_utility = theme(
-      'links', 
+      'links',
       array(
         'links' => $menu_utility,
         'attributes' => array(
@@ -116,7 +116,7 @@ function candidate_openpublic_preprocess_page(&$variables) {
   else {
     $footer_utility = menu_navigation_links('menu-footer-utility');
     $footer_utility = theme(
-      'links', 
+      'links',
       array(
         'links' => $footer_utility,
         'attributes' => array(
@@ -134,7 +134,7 @@ function candidate_openpublic_preprocess_page(&$variables) {
   }
   $variables['footer_utility'] = $footer_utility;
 
-  // We are caching the footer_menu render array for performance 
+  // We are caching the footer_menu render array for performance
   $footer_menu_cache = cache_get("footer_menu_data") ;
   if ($footer_menu_cache) {
     $footer_menu = $footer_menu_cache->data;
@@ -152,8 +152,8 @@ function candidate_openpublic_preprocess_page(&$variables) {
   }
   $variables['footer_menu'] = $footer_menu;
   $variables['main_menu'] = $footer_menu;
-  
-  
+
+
   $frontpage = variable_get('site_frontpage', 'node');
 
   $logo = $variables['logo'];
@@ -179,5 +179,87 @@ function candidate_openpublic_preprocess_page(&$variables) {
      ($node = defaultcontent_get_node("email_update")) ) {
     $node = node_view($node);
     $variables['subscribe_form'] = $node['webform'];
+  }
+}
+
+/**
+ *  Preprocess function for home page feature rotator
+ */
+function candidate_openpublic_preprocess_views_view_fields(&$vars) {
+  if ($vars['view']->name == 'home_page_feature_rotator' && $vars['view']->current_display == 'block_1') {
+    drupal_add_css(drupal_get_path("theme", 'candidate_openpublic') . "/css/home-page-rotator.css", 'file');
+    drupal_add_js(drupal_get_path("theme", 'candidate_openpublic') . "/js/jquery.cycle.min.js", 'file');
+    $result_count = sizeof($vars['view']->result);
+    if($result_count > 1) {
+      drupal_add_js('
+        function homepage_feature_rotator_rotate_slide(slide_no) {
+          jQuery("#home-rotator").cycle("pause");
+          jQuery("#home-rotator").cycle(slide_no);
+        }
+      ', 'inline');
+
+      drupal_add_js(
+        'jQuery("#home-rotator").cycle({
+          fx:     "fade",
+          speed:   600,
+          timeout: 4000,
+          cleartypeNoBg: 1,
+          height: "auto",
+          width: "auto",
+          slideResize: 0,
+          pause:   true,
+          pauseOnPagerHover: 1
+        });',
+        array('type' => 'inline', 'scope' => 'footer')
+      );
+    }
+    else {
+      drupal_add_css(
+        '.home-rotator-slide {
+          display: block;
+          margin: 0;
+        }
+        ',
+        array('type' => 'inline', 'group' => CSS_THEME, 'weight' => 30)
+      );
+    }
+
+    $nav = '';
+    $counter = 0;
+    $row = $vars['row'];
+
+    $vars['title'] = filter_xss($row->node_title);
+
+    $vars['main_image'] = filter_xss(str_ireplace('alt=""', 'alt="' . check_plain($vars['title']) . ' ' . t('feature image') . '"', $vars['fields']['entity_id_1']->content), array('a', 'img'));
+
+    foreach ($vars['view']->result as $id => $node) {
+      $active_slide = '';
+      if ($node->nid == $row->nid) {
+        $active_slide = 'class="activeSlide"';
+      }
+      $nav .= '<li><a href="#" onclick="homepage_feature_rotator_rotate_slide(' . $counter . '); return false;" ' . $active_slide . '>' . ($counter+1) . '</a></li>';
+      $counter++;
+    }
+
+    $vars['summary'] = filter_xss($vars['fields']['entity_id']->content, array('div'));
+    $vars['read_more'] = filter_xss($vars['fields']['entity_id_3']->content);
+
+    if ($vars['read_more']) {
+      $vars['main_image'] = l($vars['main_image'], $vars['read_more'], array('html' => TRUE));
+    }
+
+    if($result_count < 2) {
+      $nav = '';
+    }
+    $vars['rotator_nav'] = $nav;
+  }
+}
+
+/**
+ *  Preprocess function for home page breaking new view.
+ */
+function candidate_openpublic_preprocess_views_view(&$vars) {
+  if ($vars['view']->name == 'breaking_news' && $vars['view']->current_display == 'block_1') {
+    drupal_add_css(drupal_get_path("theme", 'candidate_openpublic') . "/css/breaking_news.css", 'file');
   }
 }
