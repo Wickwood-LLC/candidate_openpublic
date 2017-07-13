@@ -1,59 +1,59 @@
 <?php
 function bb2html($text) {
-$bbcode = array(
-"[strong]", "[/strong]",
-"[b]", "[/b]",
-"[u]", "[/u]",
-"[i]", "[/i]",
-"[em]", "[/em]",
-"[amp]", "[theta]", "[degree]", "[prime]", "[doubleprime]", "[squareroot]",
-"[br]"
-);
-$htmlcode = array(
-"<strong>", "</strong>",
-"<strong>", "</strong>",
-"<u>", "</u>",
-"<em>", "</em>",
-"<em>", "</em>",
-"&amp;", "&theta;", "&#176;", "&prime;", "&Prime;", "&radic;",
-"<br>"
-);
-return str_replace($bbcode, $htmlcode, $text);
+  $bbcode = array(
+    "[strong]", "[/strong]",
+    "[b]", "[/b]",
+    "[u]", "[/u]",
+    "[i]", "[/i]",
+    "[em]", "[/em]",
+    "[amp]", "[theta]", "[degree]", "[prime]", "[doubleprime]", "[squareroot]",
+    "[br]"
+  );
+  $htmlcode = array(
+    "<strong>", "</strong>",
+    "<strong>", "</strong>",
+    "<u>", "</u>",
+    "<em>", "</em>",
+    "<em>", "</em>",
+    "&amp;", "&theta;", "&#176;", "&prime;", "&Prime;", "&radic;",
+    "<br>"
+  );
+  return str_replace($bbcode, $htmlcode, $text);
 }
 
 function bb_strip($text) {
-$bbcode = array(
-"[strong]", "[/strong]",
-"[b]", "[/b]",
-"[u]", "[/u]",
-"[i]", "[/i]",
-"[em]", "[/em]",
-"&amp;", "&theta;", "&#176;", "&prime;", "&Prime;", "&radic;",
-"[br]"
-);
-return str_replace($bbcode, '', $text);
+  $bbcode = array(
+    "[strong]", "[/strong]",
+    "[b]", "[/b]",
+    "[u]", "[/u]",
+    "[i]", "[/i]",
+    "[em]", "[/em]",
+    "&amp;", "&theta;", "&#176;", "&prime;", "&Prime;", "&radic;",
+    "[br]"
+  );
+  return str_replace($bbcode, '', $text);
 }
 
 function bb2cleantitle($text) {
-$bbcode = array(
-"[strong]", "[/strong]",
-"[b]", "[/b]",
-"[u]", "[/u]",
-"[i]", "[/i]",
-"[em]", "[/em]",
-"[amp]", "[theta]", "[degree]", "[prime]", "[doubleprime]", "[squareroot]",
-"[br]"
-);
-$stripcode = array(
-"", "",
-"", "",
-"", "",
-"", "",
-"", "",
-"&amp;", "&theta;", "&#176;", "&prime;", "&Prime;", "&radic;",
-" "
-);
-return str_replace($bbcode, $stripcode, $text);
+  $bbcode = array(
+    "[strong]", "[/strong]",
+    "[b]", "[/b]",
+    "[u]", "[/u]",
+    "[i]", "[/i]",
+    "[em]", "[/em]",
+    "[amp]", "[theta]", "[degree]", "[prime]", "[doubleprime]", "[squareroot]",
+    "[br]"
+  );
+  $stripcode = array(
+    "", "",
+    "", "",
+    "", "",
+    "", "",
+    "", "",
+    "&amp;", "&theta;", "&#176;", "&prime;", "&Prime;", "&radic;",
+    " "
+  );
+  return str_replace($bbcode, $stripcode, $text);
 }
 
 function candidate_openpublic_preprocess_html(&$variables) {
